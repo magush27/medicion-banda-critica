@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda Crítica</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container p-3 m-auto bg-light">
+        <div class="row pb-3">
+            <div class="col-sm">
+                <h2 class="text-center m-2">Banda Crítica</h1>
+            </div>
+        </div>
+
+        <!-- Medicion 200Hz -->
+        <section class="bg-warning pb-4">
+            <div class="row pt-3">
+                <div class="col">
+                    <h3 class="text-center">Frecuencia inicial: 200Hz</h3>
+                </div>
+            </div>
+
+            <div class="row text-center pt-3">
+                <div class="col-sm">
+                    <button class="btn btn-danger mr-2" id="pause1" onclick="stopElement()">Pause</button>
+                    <button class="btn btn-info mr-1" type="button" id="reproducir-200">Reproducir</button>
+
+            <div class="row m-auto w-50">
+                <div class="col">
+                    <canvas class="col mt-3" id="onda1"></canvas>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Medicion 4000Hz -->
+        <section class="bg-warning mt-3 pb-4">
+            <div class="row pt-3">
+                <div class="col">
+                    <h3 class="text-center">Frecuencia inicial: 4000Hz</h3>
+                </div>
+            </div>
+
+            <div class="row text-center pt-3">
+                <div class="col-sm">
+                    <button class="btn btn-danger mr-2" id="pause1" onclick="stopElement2()">Pause</button>
+                    <button class="btn btn-info mr-1" type="button" id="reproducir-400">Rango 1</button>
+                    
+
+            <div class="row m-auto w-50">
+                <div class="col">
+                    <canvas class="col mt-3" id="onda2"></canvas>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Medicion 10000Hz -->
+        <section class="bg-warning mt-3 pb-4">
+            <div class="row pt-5">
+                <div class="col">
+                    <h3 class="text-center">Frecuencia inicial: 10000Hz</h3>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm">
+                    <button class="btn btn-danger mr-2" id="pause3" onclick="stopElement3()">Pause</button>
+                    <button class="btn btn-info mr-1" type="button" id="reproducir-100">Reproducir</button>
+                </div>
+            </div>
+
+
+            <div class="row m-auto w-50">
+                <div class="col">
+                    <canvas class="col mt-3" id="onda3"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
